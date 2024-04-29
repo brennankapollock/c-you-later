@@ -1,7 +1,7 @@
 all: hello
 
 hello: hello.o
-	gcc -Wall -std=c99 -o hello hello.o
+	gcc -Wall -std=c99 -o output_binary hello.o
 
 hello.o: hello.c
 	gcc -Wall -std=c99 -c hello.c
@@ -9,4 +9,4 @@ hello.o: hello.c
 .PHONY: clean
 
 clean:
-	rm -f hello hello.o
+	rm -f output_binary hello.o
